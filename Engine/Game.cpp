@@ -2176,6 +2176,9 @@ void Game::DrawGameOver( int x,int y )
 
 void Game::DrawTitleScreen( int x,int y )
 {
+	gfx.DrawCir(100,100,10,255);
+	
+
 	gfx.PutPixel( 0 + x,0 + y,208,34,34 );
 	gfx.PutPixel( 1 + x,0 + y,208,34,34 );
 	gfx.PutPixel( 2 + x,0 + y,208,34,34 );
@@ -28430,6 +28433,7 @@ void Game::DrawTitleScreen( int x,int y )
 
 void Game::ComposeFrame()
 {
+	
 	if( !isStarted )
 	{
 		DrawTitleScreen( 325,211 );

@@ -44,6 +44,7 @@ private:
 	{
 		float x,y,z;		// position
 		float u,v;			// texcoords
+
 	};
 public:
 	Graphics( class HWNDKey& key );
@@ -57,6 +58,7 @@ public:
 	}
 	void PutPixel( int x,int y,Color c );
 	void DrawRect( int x0,int y0,int x1,int y1,Color c );
+	void DrawCir(int x, int y, int radius,  Color c);
 	void DrawRectDim( int x0,int y0,int width,int height,Color c )
 	{
 		DrawRect( x0,y0,x0 + width,y0 + height,c );
@@ -79,4 +81,5 @@ private:
 public:
 	static constexpr int ScreenWidth = 800;
 	static constexpr int ScreenHeight = 600;
+	
 };
