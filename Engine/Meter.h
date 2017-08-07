@@ -23,9 +23,9 @@ public:
 		gfx.DrawRectDim( x,y,level * scale,girth,c );
 	}
 private:
-	static constexpr Color c = Colors::Blue;
-	static constexpr int girth = 12;
-	static constexpr int scale = 4;
+	const Color c = Colors::Blue;
+	const int girth = 12;
+	const int scale = 4;
 	int level = 0;
 	int x;
 	int y;
